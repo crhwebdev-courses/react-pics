@@ -4,6 +4,16 @@ A project for udemy course: Modern React with Redux [2019 Update]
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Configuration
+
+Must add a '.config.js' file to src/components that contains the following:
+
+```
+ export default {
+   unsplash_api_key: 'YOUR API KEY FROM UNSPLASH HERE'
+ };
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
