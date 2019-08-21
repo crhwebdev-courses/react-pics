@@ -7,7 +7,7 @@ const rootAddress = 'https://api.unsplash.com/';
 
 class App extends React.Component {
   async onSearchSubmit(term) {
-    const result = await axios.get(`${rootAddress}/search/photos`, {
+    const response = await axios.get(`${rootAddress}/search/photos`, {
       params: {
         query: term
       },
@@ -16,7 +16,7 @@ class App extends React.Component {
       }
     });
 
-    console.log(result);
+    console.log(response.data.results);
   }
 
   render() {
