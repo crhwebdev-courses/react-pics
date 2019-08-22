@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Configuration
 
-Must add a '.config.js' file to src/components that contains the following:
+Must add a '.config.js' file to src/api that contains the following:
 
 ```
  export default {
