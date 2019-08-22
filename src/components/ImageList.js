@@ -1,7 +1,7 @@
 import React from 'react';
 
 const showImages = images => {
-  return images.map(image => <img key={image.id} src={image.urls.small} />);
+  return images.map(image => <img key={image.id} src={image.urls.regular} />);
 };
 
 const ImageList = props => {
