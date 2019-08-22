@@ -1,9 +1,6 @@
 import React from 'react';
-import axios from 'axios';
+import axios from '../api/unsplash';
 import SearchBar from './SearchBar';
-import config from './.config.js';
-
-const rootAddress = 'https://api.unsplash.com/';
 
 class App extends React.Component {
   state = {
@@ -11,12 +8,9 @@ class App extends React.Component {
   };
 
   onSearchSubmit = async term => {
-    const response = await axios.get(`${rootAddress}/search/photos`, {
+    const response = await axios.get('/search/photos', {
       params: {
         query: term
-      },
-      headers: {
-        Authorization: `Client-ID ${config.unsplash_api_key}`
       }
     });
 
