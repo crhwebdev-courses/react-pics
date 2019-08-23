@@ -7,7 +7,6 @@ class ImageCard extends React.Component {
         <img
           alt={this.props.image.description}
           src={this.props.image.urls.regular}
-          key={this.props.image.id}
         />
       </div>
     );
