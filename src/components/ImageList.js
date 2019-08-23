@@ -1,8 +1,8 @@
 import React from 'react';
 
 const showImages = images => {
-  return images.map(image => (
-    <img alt={image.description} key={image.id} src={image.urls.regular} />
+  return images.map(({ description, id, urls }) => (
+    <img alt={description} key={id} src={urls.regular} />
   ));
 };
 
